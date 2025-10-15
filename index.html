@@ -11,6 +11,42 @@
 </head>
 <body>
   <div id="app" class="deck">
+    <!-- Tech overlay elements -->
+    <div class="tech-overlay">
+      <div class="circuit-lines"></div>
+      <div class="data-stream">
+        <div class="stream-item">context → content</div>
+        <div class="stream-item">props → render</div>
+        <div class="stream-item">state → update</div>
+        <div class="stream-item">hooks → effect</div>
+      </div>
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="btn-close"></span>
+            <span class="btn-minimize"></span>
+            <span class="btn-maximize"></span>
+          </div>
+          <div class="terminal-title">context-shapes-content.js</div>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="prompt">$</span>
+            <span class="command">npm run present</span>
+          </div>
+          <div class="terminal-line">
+            <span class="output">✓ Context analysis initialized</span>
+          </div>
+          <div class="terminal-line">
+            <span class="output">✓ Content rendering optimized</span>
+          </div>
+          <div class="terminal-line">
+            <span class="output">✓ Presentation ready</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Section indicator -->
     <div class="section-indicator">
       <div class="section-line"></div>
@@ -20,11 +56,52 @@
       <div class="section-line"></div>
     </div>
 
+    <!-- Data visualization -->
+    <div class="data-viz">
+      <div class="chart-container">
+        <div class="chart-title">Context Impact Analysis</div>
+        <div class="chart-bars">
+          <div class="bar" style="height: 85%">
+            <span class="bar-label">Performance</span>
+            <span class="bar-value">85%</span>
+          </div>
+          <div class="bar" style="height: 92%">
+            <span class="bar-label">UX</span>
+            <span class="bar-value">92%</span>
+          </div>
+          <div class="bar" style="height: 78%">
+            <span class="bar-label">Scalability</span>
+            <span class="bar-value">78%</span>
+          </div>
+          <div class="bar" style="height: 95%">
+            <span class="bar-label">Adaptability</span>
+            <span class="bar-value">95%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main class="slide">
       <div class="container">
         <h1 class="title glow">How context shapes content</h1>
         <p class="subtitle">Major: Computer Science</p>
         <p class="author">By: The Phong Doan</p>
+        
+        <!-- Tech status indicators -->
+        <div class="tech-status">
+          <div class="status-item">
+            <span class="status-dot active"></span>
+            <span class="status-text">Context Engine: Online</span>
+          </div>
+          <div class="status-item">
+            <span class="status-dot active"></span>
+            <span class="status-text">Content Renderer: Active</span>
+          </div>
+          <div class="status-item">
+            <span class="status-dot active"></span>
+            <span class="status-text">Analytics: Streaming</span>
+          </div>
+        </div>
       </div>
     </main>
   </div>
