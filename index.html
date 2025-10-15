@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Context Shapes Content — Futuristic Deck</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="deck">
+    <!-- UI chrome resembling a React app frame -->
+    <header class="appbar">
+      <div class="appbar-left">
+        <span class="react-logo" aria-hidden="true"></span>
+        <span class="brand">ContextDeck</span>
+      </div>
+      <div class="appbar-right">
+        <span id="progressText">1 / 10</span>
+      </div>
+    </header>
+
+    <main id="slides" class="slides" tabindex="0">
+      <!-- Slide 1: Title -->
+      <section class="slide is-active" data-title="Title">
+        <div class="container">
+          <h1 class="title glow">How context shapes content</h1>
+          <p class="subtitle">Major: Computer Science</p>
+          <p class="author">By: The Phong Doan</p>
+        </div>
+      </section>
+
+      <!-- Slide 2: Agenda -->
+      <section class="slide" data-title="Agenda">
+        <div class="container">
+          <h2>Roadmap</h2>
+          <ul class="bullets">
+            <li>What do we mean by <strong>context</strong> and <strong>content</strong>?</li>
+            <li>A React-style mental model for shaping content</li>
+            <li>Comparative analysis of technology: how context shifts outcomes</li>
+            <li>Case studies and patterns</li>
+            <li>Guidelines and takeaways</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 3: Definitions -->
+      <section class="slide" data-title="Definitions">
+        <div class="container">
+          <h2>Defining the terms</h2>
+          <div class="two-col">
+            <div>
+              <h3>Context</h3>
+              <ul class="bullets">
+                <li>Audience, goals, constraints</li>
+                <li>Platform, device, bandwidth</li>
+                <li>Culture, language, accessibility</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Content</h3>
+              <ul class="bullets">
+                <li>Message, structure, medium</li>
+                <li>Visuals, interaction, tone</li>
+                <li>Data density and fidelity</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 4: React Analogy -->
+      <section class="slide" data-title="React Analogy">
+        <div class="container">
+          <h2>Think React: content as a pure function of context</h2>
+          <pre class="code">content = render(context)</pre>
+          <ul class="bullets">
+            <li>Props = audience, constraints, platform</li>
+            <li>State = prior knowledge, expectations</li>
+            <li>Hooks = feedback loops and analytics</li>
+            <li>Effects = adapt copy, visuals, interaction</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 5: Comparative Analysis Intro -->
+      <section class="slide" data-title="Comparative Analysis">
+        <div class="container">
+          <h2>Comparative analysis of technology</h2>
+          <p class="lead">How context alters the evaluation of similar technologies.</p>
+          <ul class="bullets">
+            <li>Mobile-first vs Desktop-first web frameworks</li>
+            <li>SQL vs NoSQL for evolving schemas</li>
+            <li>Native apps vs Cross-platform</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 6: Example 1 -->
+      <section class="slide" data-title="Web Frameworks">
+        <div class="container">
+          <h2>Web frameworks: React vs Svelte in different contexts</h2>
+          <div class="two-col">
+            <div>
+              <h3>Edge delivery, content-heavy</h3>
+              <ul class="bullets">
+                <li>SSR/SSG, caching layers</li>
+                <li>React + Next excels with ecosystem</li>
+                <li>Context favors mature tooling</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Widget-sized, embedded UI</h3>
+              <ul class="bullets">
+                <li>Small bundle, fast hydrate</li>
+                <li>Svelte often wins on footprint</li>
+                <li>Context favors minimal runtime</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 7: Example 2 -->
+      <section class="slide" data-title="Databases">
+        <div class="container">
+          <h2>Databases: SQL vs NoSQL</h2>
+          <div class="two-col">
+            <div>
+              <h3>Stable schema, strong consistency</h3>
+              <ul class="bullets">
+                <li>SQL provides ACID and joins</li>
+                <li>Great for analytics & transactions</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Rapidly evolving models</h3>
+              <ul class="bullets">
+                <li>NoSQL flexibility, horizontal scale</li>
+                <li>Eventual consistency acceptable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 8: Example 3 -->
+      <section class="slide" data-title="Apps">
+        <div class="container">
+          <h2>Apps: Native vs Cross-platform</h2>
+          <ul class="bullets">
+            <li>Native: best performance and UX where platform conventions matter</li>
+            <li>Cross-platform: faster delivery for uniform experiences</li>
+            <li>Decision changes with team skills, device access, timelines</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 9: Patterns -->
+      <section class="slide" data-title="Patterns">
+        <div class="container">
+          <h2>Patterns for adapting content to context</h2>
+          <ul class="bullets">
+            <li>Progressive disclosure of complexity</li>
+            <li>Responsive and adaptive content, not just layout</li>
+            <li>Personalization with guardrails for clarity and ethics</li>
+            <li>Measure → learn → iterate (A/B, telemetry)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 10: Takeaways -->
+      <section class="slide" data-title="Takeaways">
+        <div class="container">
+          <h2>Takeaways</h2>
+          <ul class="bullets">
+            <li>Context is the control surface; content is the response</li>
+            <li>Comparisons must hold context constant—or make it explicit</li>
+            <li>Design systems should encode adaptation strategies</li>
+            <li>Start with audience, constraints, and goals; render accordingly</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="toolbar">
+      <button id="prev" class="btn" aria-label="Previous slide">←</button>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+      <button id="next" class="btn" aria-label="Next slide">→</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
